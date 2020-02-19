@@ -1,0 +1,13 @@
+version: '2'
+services:
+  zipline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zipline:latest
+    container_name: zipline-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - $PWD/notebooks:/home/jupyter/notebooks
+      - $PWD/zipline:/home/jupyter/zipline
