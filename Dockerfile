@@ -1,6 +1,6 @@
 
 # Use an official Python runtime as a parent image
-FROM python:3.6.7
+FROM python:3.5
 LABEL maintainer "innopearl"
 
 # Create a new system user
@@ -13,7 +13,7 @@ WORKDIR /home/jupyter
 # Copy the current directory contents into the container at /home/jupyter
 COPY requirements.txt /home/jupyter
 
-#openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mykey.key -out mycert.pem << EOF
+#openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycert.pem << EOF
 #US
 #New York
 #New York City
