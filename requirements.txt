@@ -1,11 +1,11 @@
 future
-matplotlib<=2.2.0
-pandas<=0.22
-pandas-datareader<=0.7.0
+matplotlib>=2.2.0
+pandas>=0.22
+pandas-datareader>=0.7.0
 chart_studio
 plotly
-zipline==1.3.0
-numpy<=1.16.1,>=1.11
+zipline>=1.4.1
+numpy>=1.14
 alphalens
 pyfolio
 qgrid

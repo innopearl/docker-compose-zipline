@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: zipline:latest
+    image: zipline:1.4.1
     container_name: zipline-jupyter
     ports:
       - "8888:8888"
